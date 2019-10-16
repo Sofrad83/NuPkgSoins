@@ -106,7 +106,7 @@ namespace ClassesMetier
         /// <inheritdoc/>
         public override string ToString()
         {
-            return "\t" + this.libelle + " - " + this.dateHeureSoin.ToString() + " - " + this.unIntervenant;
+            return this.libelle + " - " + this.dateHeureSoin.ToString() + " - " + this.unIntervenant;
         }
 
         /// <summary>

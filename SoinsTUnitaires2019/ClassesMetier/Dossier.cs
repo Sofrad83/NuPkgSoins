@@ -197,6 +197,13 @@ namespace ClassesMetier
             return s;
         }
 
-        
+        /// <summary>
+        /// Retourne la derniere prestation enregistrée dans le dossier.
+        /// </summary>
+        /// <returns>Prestation.</returns>
+        public Prestation DernierePrestation()
+        {
+            return this.MesPrestations[this.MesPrestations.Count() - 1];
+        }
     }
 }

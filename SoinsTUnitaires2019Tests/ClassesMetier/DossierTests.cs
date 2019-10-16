@@ -80,5 +80,13 @@ namespace ClassesMetier.Tests
         {
             throw new NotImplementedException();
         }
+
+        [TestMethod()]
+        public void DernierePrestationTest()
+        {
+            Dossier unDossier = InitialiseDossier();
+            Prestation unePrestation = new Prestation("Libelle P3", new DateTime(2015, 9, 10, 12, 0, 0), new Intervenant("Dupont", "Jean"));
+            Assert.AreEqual(unePrestation.ToString(), unDossier.DernierePrestation().ToString(), "Erreur !!!!");
+        }
     }
 }
